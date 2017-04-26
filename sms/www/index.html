@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+		<!-- App -->
+		<script src="js/app.js"></script>
+
+		<!-- Cordova -->
+		<script src="cordova.js"></script>
+
+		<style>
+			body {
+				margin: 0;
+				padding: 10px;
+				font-size: 18px;
+			}
+			input, textarea {
+				font-family: Arial, Helvetica, sans-serif;
+				line-height: 40px;
+				font-size: 16px;
+				display: block;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			input {
+				height: 60px;
+			}
+			textarea {
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+		<h1>Sms app</h1>
+		<input id="numberTxt" placeholder="Enter mobile number" value=""/>
+		<textarea id="messageTxt" placeholder="Enter message"></textarea>
+		<input type="button" onclick="sendSms()" value="Send SMS" />
+	</body>
+</html>

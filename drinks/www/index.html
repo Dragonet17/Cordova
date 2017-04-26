@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+		<!-- App -->
+		<script src="js/app.js"></script>
+
+		<!-- Cordova -->
+		<script src="cordova.js"></script>
+
+		<!-- Jquery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- Jquery Mobile -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<link rel="stylesheet" href="css/jquery.style.css">
+		<script src="js/jquery.mobile.min.js"></script>
+
+	</head>
+	<body onload="init()">
+
+		<div data-role="page" id="main">
+			<div data-role="panel" id="panel" data-display="overlay">
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+					<li data-icon="delete"><a href="#main" data-rel="close">Close panel</a></li>
+					<li><a href="#lemonade">Brandy</a></li>
+					<li><a href="#strawberry-shake">Daiquiri</a></li>
+					<li><a href="#iced-tea">Tropical Hooter</a></li>
+				</ul>
+			</div>
+			<div data-role="header">
+				<a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+				<h1>Drinks</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="lemonade">
+			<div data-role="panel" id="panel" data-display="overlay">
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+					<li data-icon="delete"><a href="#lemonade" data-rel="close">Close panel</a></li>
+					<li>Brandy</li>
+					<li><a href="#strawberry-shake">Daiquiri</a></li>
+					<li><a href="#iced-tea">Tropical Hooter</a></li>
+				</ul>
+			</div>
+			<div data-role="header">
+				<a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+				<h1>Drinks</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<img sy src="img/Brandy.jpg" alt="Lemonade">
+				<h2>Brandy</h2>
+				<p>1h 5m, 4 servings</p>
+				<h3>Ingredients</h3>
+				<p>5 lemons, 1 1/4 quarts water, 1 1/4 cups white sugar</p>
+				<h3>Directions</h3>
+				<p>Peel the rinds from the 5 lemons and cut them into 1/2 inch slices. Set the lemons aside.</p>
+				<p>Place the rinds in a bowl and sprinkle the sugar over them. Let this stand for about one hour, so that the sugar begins to soak up the oils from the lemons.</p>
+				<p>Bring water to a boil in a covered saucepan and then pour the hot water over the sugared lemon rinds. Allow this mixture to cool for 20 minutes and then remove the rinds.</p>
+				<p>Squeeze the lemons into another bowl. Pour the juice through a strainer into the sugar mixture. Stir well, pour into pitcher and pop it in the fridge! Serve with ice cubes.</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="strawberry-shake">
+			<div data-role="panel" id="panel" data-display="overlay">
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+					<li data-icon="delete"><a href="#strawberry-shake" data-rel="close">Close panel</a></li>
+					<li><a href="#lemonade">Brandy</a></li>
+					<li>Strawberry Shake</li>
+					<li><a href="#iced-tea">Tropical Hooter</a></li>
+				</ul>
+			</div>
+			<div data-role="header">
+				<a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+				<h1>Drinks</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<img src="img/daiquiri.jpg" alt="Strawberry Shake">
+				<h2>Daiquiri</h2>
+				<p>10m, 1 serving</p>
+				<h3>Ingredients</h3>
+				<p>4 cups strawberries, 2 cups ice cubes, 2 cups milk, 4 cups strawberry ice cream, 2 teaspoons white sugar</p>
+				<h3>Directions</h3>
+				<p>In a blender combine strawberries, ice, milk, ice cream and sugar. Blend until smooth.</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="iced-tea">
+			<div data-role="panel" id="panel" data-display="overlay">
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+					<li data-icon="delete"><a href="#iced-tea" data-rel="close">Close panel</a></li>
+					<li><a href="#lemonade">Brandy</a></li>
+					<li><a href="#strawberry-shake">Daiquiri</a></li>
+					<li>Tropical Hooter</li>
+				</ul>
+			</div>
+			<div data-role="header">
+				<a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+				<h1>Drinks</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<img src="img/tropical-hooter.jpg" alt="Iced Tea">
+				<h2>Iced Tea</h2>
+				<p>3h 20m, 8 servings</p>
+				<h3>Ingredients</h3>
+				<p>1 pinch baking soda, 2 cups boiling water, 6 tea bags, 3/4 cup white sugar, 6 cups cool water</p>
+				<h3>Directions</h3>
+				<p>Sprinkle a pinch of baking soda into a 64-ounce, heat-proof, glass pitcher. Pour in boiling water, and add tea bags. Cover, and allow to steep for 15 minutes.</p>
+				<p>Remove tea bags, and discard; stir in sugar until dissolved. Pour in cool water, then refrigerate until cold.</p>
+			</div>
+		</div>
+	</body>
+</html>

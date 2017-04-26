@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/customefields.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body onload="init()">
+		<div data-role="page" id="main">
+			<div data-role="header">
+				<h1>Order</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+
+				<label for="text-basic">To:</label>
+				<input type="text" name="text-basic" id="text-basic" value="" placeholder="Customer name and surname">
+
+				<label for="date">Date:</label>
+				<input type="date" name="date" id="date" value="">
+
+				<label for="select-product" class="select">Product:</label>
+				<select name="select-product" id="select-product" data-native-menu="false" data-icon="grid" data-iconpos="left">
+				    <option>Choose a product:</option>
+				    <optgroup label="PC">
+				        <option value="whooper">Processor</option>
+				        <option value="whooperDouble">Driver</option>
+				        <option value="whooperTriple">Graphic card</option>
+				        <option value="whooperJr">RAM</option>
+				    </optgroup>
+				    <optgroup label="Device">
+				        <option value="chicnCrisp">Monitor</option>
+				        <option value="spicyTendercrisp">Keyboard</option>
+				    </optgroup>
+				</select>
+
+				<label for="slider-fill">Quantity:</label>
+				<input type="range" name="slider-fill" id="slider-fill" value="1" min="1" max="10" data-highlight="true">
+
+				<div style="text-align: center;">
+					<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Approve</a>
+					<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Reject</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

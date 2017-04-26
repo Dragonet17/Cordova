@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+		<!-- App -->
+		<script src="js/app.js"></script>
+
+		<!-- Cordova -->
+		<script src="cordova.js"></script>
+
+		<!-- Jquery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- Jquery Mobile -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<script src="js/jquery.mobile.min.js"></script>
+		
+		<style>
+			* {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+		<div data-role="page" id="main">
+			<div data-role="header">
+				<h1>Businesscard</h1>
+			</div>
+			<div data-role="main">
+				<h2>Karol Cichoń</h2>
+				<p>kc132@gmail.com</p>
+				<p>Full-time web developer and student</p>
+			</div>
+			<a href="#interests" class="ui-btn">Interests</a>
+		</div>
+		<div data-role="page" id="interests">
+			<div data-role="header">
+				<a href="#main" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">&nbsp;</a>
+				<h1>Business card</h1>
+			</div>
+			<div data-role="main">
+				<h2>Interests</h2>
+				<p>My biggest interest is web developing,I known, ASP.NET MVC. Entity Framework. I used HTML CSS BOTTSTRAP JS/JQ. In the future, I will know Xamarin and Angular. <br/>I want to improve myself every single day.</p>
+			</div>
+		</div>
+	</body>
+</html>

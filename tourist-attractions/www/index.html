@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+		<!-- App -->
+		<script src="js/app.js"></script>
+
+		<!-- Cordova -->
+		<script src="cordova.js"></script>
+
+		<!-- Jquery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- Jquery Mobile -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<script src="js/jquery.mobile.min.js"></script>
+	</head>
+	<body onload="init()">
+		<div data-role="page" id="main">
+			<div data-role="header">
+				<h1>Tourist attractions</h1>
+			</div>
+			<div data-role="main">
+				<div>
+					<a href="#masuria" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn" data-transition="pop">Masuria</a>
+					<a href="#pomerania" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn" data-transition="pop">Pomerania</a>
+					<a href="#tatra" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn" data-transition="pop">The Tatra Mountains</a>
+				</div>
+				<div>
+					<div data-role="popup" id="masuria" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<img src="img/Masuria.png" alt="Masuria">
+					</div>
+					<div data-role="popup" id="pomerania" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+						<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<img src="img/Pomerania.png" alt="Masuria">
+					</div>
+					<div data-role="popup" id="tatra" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+						<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<img src="img/Tatra.jpg" alt="Masuria">
+					</div>
+				</div>
+			</div>
+			 <div data-role="footer">
+    			<h1>Karol Cichoń</h1>
+  			</div>
+		</div>
+	</body>
+</html>
